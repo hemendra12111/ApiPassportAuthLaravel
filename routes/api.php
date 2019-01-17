@@ -20,3 +20,4 @@ Route::post('/register','Api\AuthController@register');
 Route::post('/login','Api\AuthController@login');
 Route::apiResource('student','Api\StudentController');
 Route::apiResource('teacher','Api\TeacherController');
+Route::apiResource('classroom','Api\ClassroomController');

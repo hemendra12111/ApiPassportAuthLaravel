@@ -3,6 +3,7 @@
 namespace App;
 use App\Student;
 use App\Teacher;
+use App\Classroom;
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -34,5 +35,8 @@ class User extends Authenticatable
     }
     public function Teachers(){
         return $this->hasmany(Teacher::class);
+    }
+    public function Classrooms(){
+        return $this->hasmany(Classroom::class);
     }
 }
